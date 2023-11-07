@@ -20,7 +20,7 @@ public class Main {
 
             scanner.close();
             code.clear();
-            
+
             LPP_grammarLexer lexer = new LPP_grammarLexer(CharStreams.fromString(stringProgram));
 
             CommonTokenStream tokenStream = new CommonTokenStream(lexer);
