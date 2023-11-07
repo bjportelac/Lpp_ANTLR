@@ -18,10 +18,12 @@ public class Main {
 
             String stringProgram = String.join("\n", code);
 
-            System.out.println(stringProgram);
-
             scanner.close();
             code.clear();
+
+            try {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } catch (Exception e) {}
 
             LPP_grammarLexer lexer = new LPP_grammarLexer(CharStreams.fromString(stringProgram));
 
