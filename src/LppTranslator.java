@@ -5,16 +5,20 @@ public class LppTranslator<T> extends  LPP_grammarBaseVisitor<T>{
 
     public static StringBuilder translatedCode = new StringBuilder();
 
-    private int indentationControl = 0;
-
     public void addNewLines(int lines){
-        translatedCode.append("\n".repeat(Math.max(0, lines)));
+        for(int i = 0; i < lines; i++){
+            translatedCode.append("\n");
+        }
     }
     public void addTabulations(int tabs){
-        translatedCode.append("\t".repeat(Math.max(0, tabs)));
+        for(int i = 0; i < tabs; i++){
+            translatedCode.append("\t");
+        }
     }
-    public void addSpaces(int lines){
-        translatedCode.append(" ".repeat(Math.max(0, lines)));
+    public void addSpaces(int spaces){
+        for(int i = 0; i < spaces; i++){
+            translatedCode.append(" ");
+        }
     }
 
     //Added the library for the main program
