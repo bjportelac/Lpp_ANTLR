@@ -20,11 +20,7 @@ public class Main {
 
             scanner.close();
             code.clear();
-
-            try {
-                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-            } catch (Exception e) {}
-
+            
             LPP_grammarLexer lexer = new LPP_grammarLexer(CharStreams.fromString(stringProgram));
 
             CommonTokenStream tokenStream = new CommonTokenStream(lexer);
