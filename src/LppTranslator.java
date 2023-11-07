@@ -756,7 +756,7 @@ public class LppTranslator<T> extends  LPP_grammarBaseVisitor<T>{
 
             //Rule expr POW expr
             if(ctx.expr().size() == 2 && ctx.POW() != null && ctx.expr() != null){
-                translatedCode.append("Math.pow(");
+                translatedCode.append("(int) Math.pow(");
                 visitExpr(ctx.expr(0));
                 translatedCode.append(",");
                 visitExpr(ctx.expr(1));
@@ -904,7 +904,6 @@ public class LppTranslator<T> extends  LPP_grammarBaseVisitor<T>{
                 addTabulations(1);
                 translatedCode.append("return");
                 addSpaces(1);
-                addNewLines(1);
             }
             if(ctx.expr() != null){
                 visitExpr(ctx.expr());

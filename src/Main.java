@@ -1,11 +1,9 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+
 import java.util.Scanner;
 
-public class Translate {
+public class Main {
     public static void main(String[] args) throws Exception{
 
         try {
