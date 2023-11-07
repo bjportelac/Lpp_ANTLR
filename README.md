@@ -31,6 +31,9 @@
 - se definio la estructura de la traduccion como si el resultado se generara para la clase Main de java estandar
 - Se añadió la estructura del metodo void main de Java
 - Se escogio Java como lenguaje destino por sus similitudes con la sintaxis de LPP
+
+- Se escogio el metodo de visitors para la traduccion como metodo de aproximacion ya que se hizo una primera implementacion mediante listeners sin embargo estos son menos controlados y el hecho de visitar todos los nodos hace que se obtengan resultados no deseados, sin embargo dentro de la clase **LPPTranslator** se dejo comentado el codigo fuente hecho para los listeners.
+- La gramatica utilizada esta inspirada y trabajada sobre la gramatica de LPP en ANTLR propuesta por Mauricio Hernandez en el repositorio [https://github.com/LenguajeLPP/lpp/blob/master/src/main/antlr4/org/lpp/parser/LPP.g4](https://github.com/LenguajeLPP/lpp).
 ---
 
 **Nota:**
@@ -64,4 +67,9 @@
 
 
 
-   
+
+
+
+
+
+Nota personal: Este pseudolenguaje es horrible.
