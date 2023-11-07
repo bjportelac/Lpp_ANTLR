@@ -37,7 +37,7 @@ varType: Integer
 idList : ID (COM ID)*; //done
 intList: INT_VAL (COM INT_VAL)*;
 
-//Translate code and subroutines
+//Main code and subroutines
 mainCode: programCode;
 //subroutineCode: subroutineCode NEWLINE+;
 /*simpleRoutine: Begin

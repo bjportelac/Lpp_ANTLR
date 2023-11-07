@@ -1,22 +1,29 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception{
 
         try {
-            LPP_grammarLexer lexer;
-            if(args.length > 0){
-                System.out.println("\nUsando el archivo input.txt de la carpeta /input del proyecto: \n");
-                lexer = new LPP_grammarLexer(CharStreams.fromFileName(args[0]));
-            }else{
-                System.out.println("\nUsando Codigo por consola: \n");
-                Scanner scanner = new Scanner(System.in);
-                String input = scanner.nextLine();
-                lexer = new LPP_grammarLexer(CharStreams.fromString(input));
+            Scanner scanner = new Scanner(System.in);
+            ArrayList<String> code = new ArrayList<>();
+
+            while (scanner.hasNextLine()) {
+                String line= scanner.nextLine();
+                code.add(line);
             }
+
+            String stringProgram = String.join("\n", code);
+
+            System.out.println(stringProgram);
+
+            scanner.close();
+            code.clear();
+
+            LPP_grammarLexer lexer = new LPP_grammarLexer(CharStreams.fromString(stringProgram));
 
             CommonTokenStream tokenStream = new CommonTokenStream(lexer);
             LPP_grammarParser parser = new LPP_grammarParser(tokenStream);
@@ -30,14 +37,10 @@ public class Main {
             StringBuilder traslated = LppTranslator.translatedCode;
             String str = traslated.toString();
 
-            /*try(FileWriter writer = new FileWriter("output/Main.java",true)) {
-                writer.write(str);
-            } catch(IOException e) {
-                e.getCause();
-            }*/
-
+            System.out.println(str);
         }catch (Exception e){
-            System.err.println("Error (Translate): " + e);
+            System.err.println("Error (Main): " + e);
+            throw e;
         }
     }
 }

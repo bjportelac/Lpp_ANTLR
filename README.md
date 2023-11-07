@@ -22,10 +22,10 @@
 - para recibir archivos, debe hacerse uso de la ruta del mismo o puede reemplazarse el contenido del archivo input.txt en la carpeta input del proyecto
 
 **Ejemplo:**
-``` C:\Users\benga\.jdks\jbr-17.0.8.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.3\lib\idea_rt.jar=53770:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.3\bin" -Dfile.encoding=UTF-8 -classpath D:\Universidad\Lenguajes\IntroANTLR\Lpp_Antlr\out\production\Lpp_Antlr;D:\Universidad\Lenguajes\antlr-runtime-4.13.1.jar Translate D:\Universidad\Lenguajes\IntroANTLR\Lpp_Antlr\input\input.txt ```
+``` C:\Users\benga\.jdks\jbr-17.0.8.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.3\lib\idea_rt.jar=53770:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.3\bin" -Dfile.encoding=UTF-8 -classpath D:\Universidad\Lenguajes\IntroANTLR\Lpp_Antlr\out\production\Lpp_Antlr;D:\Universidad\Lenguajes\antlr-runtime-4.13.1.jar Main D:\Universidad\Lenguajes\IntroANTLR\Lpp_Antlr\input\input.txt ```
 
 - Tambien se recibe entrada por consola si el archivo input.txt no esta presente
-- se reemplazo la clase Main por la clase Translate.
+- se reemplazo la clase Main por la clase Main.
 
 ## Particularidades
 
