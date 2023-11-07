@@ -59,6 +59,9 @@
 
 ![image](https://github.com/bjportelac/Lpp_ANTLR/assets/32397114/762019f3-8318-4901-92e2-47734100c886)
 
+---
+**TODO:** HashTable de variables | escoger un mejor lenguaje destino.
+
 
 
    
