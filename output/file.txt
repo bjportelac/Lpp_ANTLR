@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Math;
+
+public class Main{
+	public class alias{
+		String val;
+		}
+
+	public String[2] arreglo_cadenas;
+		alias tester;
+		
+	
+
+	public static void main(String args[]) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		
+		arreglo_cadenas[1] = valtester.val;System.out.println();
+
+		System.out.println(arreglo_cadenas[1]);
+
+	}
+}

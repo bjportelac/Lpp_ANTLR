@@ -1,5 +1,5 @@
-entero evaluates
-
+entero evaluates   
+   
 funcion factorial_recursive(entero n): entero
 entero res
 inicio
@@ -8,7 +8,7 @@ inicio
   sino
      res <- n*factorial_recursive(n-1)
   fin si
-
+  
   retorne res
 
 fin
