@@ -3,6 +3,11 @@
 ## Practica 3: Traductor o Interprete
 
 ---
+### Hecho por:
+- Wiliam Humberto Garcia Gongora
+- Andrea Katherine Garcia
+- Brayan Rolando Jr. Portela Cabrera 
+---
 
 ### Configuracion
 
